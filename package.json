@@ -1,6 +1,6 @@
 {
   "name": "jsonwebtoken-plus",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "jsonwebtoken",
   "main": "./lib/index.js",
   "types": "./src/index.ts",
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com/common-ts/jsonwebtoken-plus"
+    "url": "git@github.com/common-ts/jsonwebtoken"
   },
   "keywords": [
     "jsonwebtoken",
