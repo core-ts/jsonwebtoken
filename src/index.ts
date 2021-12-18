@@ -1,6 +1,10 @@
 import { JsonWebTokenError, JwtPayload, sign, TokenExpiredError, verify as ver, VerifyErrors } from 'jsonwebtoken';
 
 export type Payload = JwtPayload | undefined;
+export interface Token {
+  secret: string;
+  expires: number;
+}
 export function generate(payload: any, secret: string, expiresIn: number): Promise<string | undefined> {
   return new Promise<string | undefined>(((resolve, reject) => {
     sign(payload, secret, { expiresIn }, (err, token?: string) => err ? reject(err) : resolve(token));
