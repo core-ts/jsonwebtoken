@@ -10,11 +10,13 @@ export function generate(payload: any, secret: string, expiresIn: number): Promi
     sign(payload, secret, { expiresIn }, (err, token?: string) => err ? reject(err) : resolve(token));
   }));
 }
+export const generateToken = generate;
 export function verify(token: string, secret: string): Promise<Payload> {
   return new Promise<Payload>(((resolve, reject) => {
     ver(token, secret, (err: VerifyErrors | null, payload: Payload) => err ? reject(err) : resolve(payload));
   }));
 }
+export const verifyToken = verify;
 export class TokenService {
   constructor() {
     this.generate = this.generate.bind(this);
