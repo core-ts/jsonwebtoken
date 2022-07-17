@@ -1,6 +1,6 @@
 {
   "name": "jsonwebtoken-plus",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "jsonwebtoken",
   "main": "./lib/index.js",
   "types": "./src/index.ts",
@@ -9,7 +9,7 @@
     "clean:lib": "rimraf lib"
   },
   "devDependencies": {
-    "@types/jsonwebtoken": "^8.5.0",
+    "@types/jsonwebtoken": "^8.5.8",
     "jsonwebtoken": "^8.5.1",
     "tslint": "5.10.0",
     "typescript": "^3.8.3"

@@ -1,6 +1,6 @@
-import { JsonWebTokenError, JwtPayload, sign, TokenExpiredError, verify as ver, VerifyErrors } from 'jsonwebtoken';
+import { JsonWebTokenError, Jwt, JwtPayload, sign, TokenExpiredError, verify as ver, VerifyErrors } from 'jsonwebtoken';
 
-export type Payload = JwtPayload | undefined;
+export type Payload = Jwt | JwtPayload | string | undefined;
 export interface Token {
   secret: string;
   expires: number;
